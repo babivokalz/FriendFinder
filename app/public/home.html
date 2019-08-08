@@ -39,19 +39,54 @@
 
     <!-- Fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+      href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Indie+Flower&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Styling -->
     <style>
       body {
-        background-image: url("../../styling/images/friendfinderbackground.jpg");
+        background-image: url("../../images/friendfinderbackground.jpg");
         background-size: cover;
         background-repeat: none;
         background-attachment: fixed;
       }
+
+      .card-container {
+        margin: 10rem;
+      }
+      /* .special-card {
+        background: rgb(255, 255, 255, 0.4);
+      } */
+      h1 {
+        font-family: "Indie Flower", cursive;
+      }
+
+      p {
+        font-family: "Darker Grotesque", sans-serif;
+        font-size: 25px;
+      }
     </style>
   </head>
 
-  <body></body>
+  <body>
+    <div class="card-container">
+      <div class="row justify-content-center p-5">
+        <div class="card w-60">
+          <div
+            class="card-body special-card"
+            style="background-color: rgb(255, 255, 255, 0.4); "
+          >
+            <h1 class="card-title">Welcome to Friend Finder!</h1>
+            <p class="card-text">
+              Are you ready to find a friend? Click the button below to start.
+            </p>
+            <button class="btn btn-outline-primary" type="submit">
+              Ready
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
