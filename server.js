@@ -10,6 +10,9 @@ var PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+require(".apiRoutes");
+require(".htmlRoutes");
+
 app.get("/", function(req, res) {
   res.send("route hit");
 });
