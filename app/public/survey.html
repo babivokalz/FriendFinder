@@ -46,7 +46,37 @@
     <script src="https://kit.fontawesome.com/c45ea1cb4d.js"></script>
 
     <!-- local stylesheet -->
-    <link rel="stylesheet" href="../../styling/global.css" />
+    <!-- <link rel="stylesheet" href="/FriendFinder/styling/global.css" /> -->
+
+    <style>
+      body {
+        background-image: url("images/friendfinderbackground.jpg");
+        background-size: cover;
+        background-repeat: none;
+        background-attachment: fixed;
+      }
+      label {
+        font-family: "Darker Grotesque", sans-serif;
+        font-size: 25px;
+      }
+      h3 {
+        font-family: "Indie Flower", cursive;
+      }
+
+      h4 {
+        font-family: "Darker Grotesque", sans-serif;
+        font-size: 25px;
+      }
+      input[type="text"] {
+        display: flex;
+        width: 200px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      input[type="text"]:focus {
+        width: 50%;
+      }
+    </style>
   </head>
 
   <body>
@@ -67,331 +97,329 @@
         </div>
       </div>
     </div>
-  </br>
+    <br />
     <form id="answersForm">
-      <div class="form-group card p-2" style="background-color: rgba(255, 255, 255, 0.6);">
-      </br>
-        <div
-        class="col-lg-12">
-          <label>Question 1: I'm very social and love to go out and interact with all kinds of people.</label>
-      </br>
-      <div class='row'>
-        <div class='col-1 text-left'>
-            <span><i class="far fa-frown fa-lg"></i></span>
-            </div>
-            <div class='col-10'>
-          <input
-            type="range"
-            class="form-control-range"
-            min="0"
-            max="5"
-            id="q1"
-          />
-          </div>
-          <div class='col-1 text-right'>
-            <span><i class='far fa-laugh-beam fa-lg'></i></span>
-          </div>
-        </div>
-      </br>
-        </div>
-      </br>
-        <div
-        class="col-lg-12">
-          <label>Question 2: I relate most to the sour patch kid; sometimes I'm sour, sometimes I'm sweet.</label>
-      </br>
-      <div class='row'>
-        <div class='col-1 text-left'>
-            <span><i class="far fa-frown fa-lg"></i></span>
-            </div>
-            <div class='col-10'>
-          <input
-            type="range"
-            class="form-control-range"
-            min="0"
-            max="5"
-            id="q2"
-          />
-          </div>
-          <div class='col-1 text-right'>
-            <span><i class='far fa-laugh-beam fa-lg'></i></span>
-          </div>
-        </div>
-      </br>
-        </div>
-      </br>
-        <div
-        class="col-lg-12">
-          <label>Question 3: I am standoffish with strangers, no one is getting past me!</label>
-      </br>
-      <div class='row'>
-        <div class='col-1 text-left'>
-            <span><i class="far fa-frown fa-lg"></i></span>
-            </div>
-            <div class='col-10'>
-          <input
-            type="range"
-            class="form-control-range"
-            min="0"
-            max="5"
-            id="q3"
-          />
-          </div>
-          <div class='col-1 text-right'>
-            <span><i class='far fa-laugh-beam fa-lg'></i></span>
-          </div>
-        </div>
-      </br>
-        </div>
-      </br>
-        <div
-        class="col-lg-12">
-          <label>Question 4: I feel most relaxed when I'm in the comfort of my own home.</label>
-      </br>
-      <div class='row'>
-        <div class='col-1 text-left'>
-            <span><i class="far fa-frown fa-lg"></i></span>
-            </div>
-            <div class='col-10'>
-          <input
-            type="range"
-            class="form-control-range"
-            min="0"
-            max="5"
-            id="q4"
-          />
-          </div>
-          <div class='col-1 text-right'>
-            <span><i class='far fa-laugh-beam fa-lg'></i></span>
-          </div>
-        </div>
-      </br>
-        </div>
-      </br>
-        <div
-        class="col-lg-12">
-          <label>Question 5: I don't let my physical stature affect what I can and cannot do!</label>
-      </br>
-      <div class='row'>
-        <div class='col-1 text-left'>
-            <span><i class="far fa-frown fa-lg"></i></span>
-            </div>
-            <div class='col-10'>
-          <input
-            type="range"
-            class="form-control-range"
-            min="0"
-            max="5"
-            id="q5"
-          />
-          </div>
-          <div class='col-1 text-right'>
-            <span><i class='far fa-laugh-beam fa-lg'></i></span>
-          </div>
-        </div>
-      </br>
-        </div>
-      </br>
-        <div
-        class="col-lg-12">
-          <label>Question 6: I don't let peer pressure influence what I do or don't do.</label>
-      </br>
-      <div class='row'>
-        <div class='col-1 text-left'>
-            <span><i class="far fa-frown fa-lg"></i></span>
-            </div>
-            <div class='col-10'>
-          <input
-            type="range"
-            class="form-control-range"
-            min="0"
-            max="5"
-            id="q6"
-          />
-          </div>
-          <div class='col-1 text-right'>
-            <span><i class='far fa-laugh-beam fa-lg'></i></span>
-          </div>
-        </div>
-      </br>
-        </div>
-      </br>
-        <div
-        class="col-lg-12">
-          <label>Question 7: My favorite thing to do to relax is to find a nice sunny spot and take a nap.</label>
-      </br>
-      <div class='row'>
-        <div class='col-1 text-left'>
-            <span><i class="far fa-frown fa-lg"></i></span>
-            </div>
-            <div class='col-10'>
-          <input
-            type="range"
-            class="form-control-range"
-            min="0"
-            max="5"
-            id="q7"
-          />
-          </div>
-          <div class='col-1 text-right'>
-            <span><i class='far fa-laugh-beam fa-lg'></i></span>
-          </div>
-        </div>
-      </br>
-        </div>
-      </br>
-        <div
-        class="col-lg-12">
-          <label>Question 8: I am most active when the weather is cool.</label>
-      </br>
-      <div class='row'>
-        <div class='col-1 text-left'>
-            <span><i class="far fa-frown fa-lg"></i></span>
-            </div>
-            <div class='col-10'>
-          <input
-            type="range"
-            class="form-control-range"
-            min="0"
-            max="5"
-            id="q8"
-          />
-          </div>
-          <div class='col-1 text-right'>
-            <span><i class='far fa-laugh-beam fa-lg'></i></span>
-          </div>
-        </div>
-      </br>
-        </div>
-      </br>
-        <div
-        class="col-lg-12">
-          <label>Question 9: I'm the strong and silent type.</label>
-      </br>
-      <div class='row'>
-        <div class='col-1 text-left'>
-            <span><i class="far fa-frown fa-lg"></i></span>
-            </div>
-            <div class='col-10'>
-          <input
-            type="range"
-            class="form-control-range"
-            min="0"
-            max="5"
-            id="q9"
-          />
-          </div>
-          <div class='col-1 text-right'>
-            <span><i class='far fa-laugh-beam fa-lg'></i></span>
-          </div>
-        </div>
-      </br>
-        </div>
-      </br>
-        <div
-        class="col-lg-12">
-          <label>Question 10: I love adventure and exploring new things!</label>
-      </br>
-      <div class='row'>
-        <div class='col-1 text-left'>
-            <span><i class="far fa-frown fa-lg"></i></span>
-            </div>
-            <div class='col-10'>
-          <input
-            type="range"
-            class="form-control-range"
-            min="0"
-            max="5"
-            id="q10"
-          />
-          </div>
-          <div class='col-1 text-right'>
-            <span><i class='far fa-laugh-beam fa-lg'></i></span>
-          </div>
-        </div>
-      </br>
-        </div>
-      </br>
-        <div class='text-center'>
-            <button
-            type="submit"
-            class="btn btn-primary"
-            id="submit"
+      <div
+        class="form-group card p-2"
+        style="background-color: rgba(255, 255, 255, 0.6);"
+      >
+        <br />
+        <div class="col-lg-12">
+          <label
+            >Question 1: I'm very social and love to go out and interact with
+            all kinds of people.</label
           >
+          <br />
+          <div class="row">
+            <div class="col-1 text-left">
+              <span><i class="far fa-frown fa-lg"></i></span>
+            </div>
+            <div class="col-10">
+              <input
+                type="range"
+                class="form-control-range"
+                min="0"
+                max="5"
+                id="q1"
+              />
+            </div>
+            <div class="col-1 text-right">
+              <span><i class="far fa-laugh-beam fa-lg"></i></span>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+        <div class="col-lg-12">
+          <label
+            >Question 2: I relate most to the sour patch kid; sometimes I'm
+            sour, sometimes I'm sweet.</label
+          >
+          <br />
+          <div class="row">
+            <div class="col-1 text-left">
+              <span><i class="far fa-frown fa-lg"></i></span>
+            </div>
+            <div class="col-10">
+              <input
+                type="range"
+                class="form-control-range"
+                min="0"
+                max="5"
+                id="q2"
+              />
+            </div>
+            <div class="col-1 text-right">
+              <span><i class="far fa-laugh-beam fa-lg"></i></span>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+        <div class="col-lg-12">
+          <label
+            >Question 3: I am standoffish with strangers, no one is getting past
+            me!</label
+          >
+          <br />
+          <div class="row">
+            <div class="col-1 text-left">
+              <span><i class="far fa-frown fa-lg"></i></span>
+            </div>
+            <div class="col-10">
+              <input
+                type="range"
+                class="form-control-range"
+                min="0"
+                max="5"
+                id="q3"
+              />
+            </div>
+            <div class="col-1 text-right">
+              <span><i class="far fa-laugh-beam fa-lg"></i></span>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+        <div class="col-lg-12">
+          <label
+            >Question 4: I feel most relaxed when I'm in the comfort of my own
+            home.</label
+          >
+          <br />
+          <div class="row">
+            <div class="col-1 text-left">
+              <span><i class="far fa-frown fa-lg"></i></span>
+            </div>
+            <div class="col-10">
+              <input
+                type="range"
+                class="form-control-range"
+                min="0"
+                max="5"
+                id="q4"
+              />
+            </div>
+            <div class="col-1 text-right">
+              <span><i class="far fa-laugh-beam fa-lg"></i></span>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+        <div class="col-lg-12">
+          <label
+            >Question 5: I don't let my physical stature affect what I can and
+            cannot do!</label
+          >
+          <br />
+          <div class="row">
+            <div class="col-1 text-left">
+              <span><i class="far fa-frown fa-lg"></i></span>
+            </div>
+            <div class="col-10">
+              <input
+                type="range"
+                class="form-control-range"
+                min="0"
+                max="5"
+                id="q5"
+              />
+            </div>
+            <div class="col-1 text-right">
+              <span><i class="far fa-laugh-beam fa-lg"></i></span>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+        <div class="col-lg-12">
+          <label
+            >Question 6: I don't let peer pressure influence what I do or don't
+            do.</label
+          >
+          <br />
+          <div class="row">
+            <div class="col-1 text-left">
+              <span><i class="far fa-frown fa-lg"></i></span>
+            </div>
+            <div class="col-10">
+              <input
+                type="range"
+                class="form-control-range"
+                min="0"
+                max="5"
+                id="q6"
+              />
+            </div>
+            <div class="col-1 text-right">
+              <span><i class="far fa-laugh-beam fa-lg"></i></span>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+        <div class="col-lg-12">
+          <label
+            >Question 7: My favorite thing to do to relax is to find a nice
+            sunny spot and take a nap.</label
+          >
+          <br />
+          <div class="row">
+            <div class="col-1 text-left">
+              <span><i class="far fa-frown fa-lg"></i></span>
+            </div>
+            <div class="col-10">
+              <input
+                type="range"
+                class="form-control-range"
+                min="0"
+                max="5"
+                id="q7"
+              />
+            </div>
+            <div class="col-1 text-right">
+              <span><i class="far fa-laugh-beam fa-lg"></i></span>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+        <div class="col-lg-12">
+          <label>Question 8: I am most active when the weather is cool.</label>
+          <br />
+          <div class="row">
+            <div class="col-1 text-left">
+              <span><i class="far fa-frown fa-lg"></i></span>
+            </div>
+            <div class="col-10">
+              <input
+                type="range"
+                class="form-control-range"
+                min="0"
+                max="5"
+                id="q8"
+              />
+            </div>
+            <div class="col-1 text-right">
+              <span><i class="far fa-laugh-beam fa-lg"></i></span>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+        <div class="col-lg-12">
+          <label>Question 9: I'm the strong and silent type.</label>
+          <br />
+          <div class="row">
+            <div class="col-1 text-left">
+              <span><i class="far fa-frown fa-lg"></i></span>
+            </div>
+            <div class="col-10">
+              <input
+                type="range"
+                class="form-control-range"
+                min="0"
+                max="5"
+                id="q9"
+              />
+            </div>
+            <div class="col-1 text-right">
+              <span><i class="far fa-laugh-beam fa-lg"></i></span>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+        <div class="col-lg-12">
+          <label>Question 10: I love adventure and exploring new things!</label>
+          <br />
+          <div class="row">
+            <div class="col-1 text-left">
+              <span><i class="far fa-frown fa-lg"></i></span>
+            </div>
+            <div class="col-10">
+              <input
+                type="range"
+                class="form-control-range"
+                min="0"
+                max="5"
+                id="q10"
+              />
+            </div>
+            <div class="col-1 text-right">
+              <span><i class="far fa-laugh-beam fa-lg"></i></span>
+            </div>
+          </div>
+          <br />
+        </div>
+        <br />
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary" id="submit">
             <i class="fa fa-check-circle" aria-hidden="true"></i> Submit
           </button>
         </div>
-      </br>
+        <br />
       </div>
     </form>
 
-    <div id="resultsModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">
-                &times;
-              </button>
-              <h2 class="modal-title"><strong>Best Match</strong></h2>
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Results</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="resultModal" class="modal-body row">
+            <div class="col-6">
+              <div id="matchImg"></div>
             </div>
-  
-            <div class="modal-body">
-              <h2 id="matchName"></h2>
-              <img
-                id="matchImg"
-                src="https://via.placeholder.com/400x400"
-                alt="Placeholder image in case user pic doesn't show"
-              />
+            <div class="col-6">
+              <div id="matchName"></div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">
-                Close
-              </button>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
           </div>
         </div>
       </div>
-
     </div>
-    <script>
-    $("#submit").on('click', function() {
-      function validateForm() {
-        var isValid = true; 
-        $(".form-control").each(function() {
-          if($(this).val() === "") isValid = false;
-        });
-        $(".form-control-range").each(function() {
-          if($(this).val() === "") isValid = false;
-        });
-        return isValid;
-      }
-      if(validateForm() === true) {
-        var userData = {
-          name: $("#name").val(),
-          photo: $("#photo").val(),
-          scores: [
-            $("q1").val(),
-            $("q2").val(),
-            $("q3").val(),
-            $("q4").val(),
-            $("q5").val(),
-            $("q6").val(),
-            $("q7").val(),
-            $("q8").val(),
-            $("q9").val(),
-            $("q10").val(),
-          ]
-        };
 
-        var currentURL = window.location.origin;
-        $.post(currentURL + '/api/friends', userData, function(data) {
-          $("#matchName").text(data.name);
-          $("#matchImg").attr("src", data.photo);
-          $("#resultsModal").modal('toggle');
+    <script>
+      $(document).on("submit", "#answersForm", function() {
+        event.preventDefault();
+        $.ajax({
+          url: `/api/friends`,
+          method: "POST",
+          data: $("#answersForm").serialize()
+        }).then(function(response) {
+          console.log(response.name);
+          console.log(response.photo);
+          $("#matchName").append(`${response.name}`);
+          $("#matchImg").append(`src=${response.photo}`);
+          // $("#resultsModal").modal("toggle");
         });
-      } else {
-        alert("Please fill out all fields before submitting")
-      }
-      return false;
-    });
+      });
     </script>
   </body>
 </html>

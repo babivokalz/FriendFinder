@@ -44,7 +44,23 @@
     />
 
     <!-- local stylesheet -->
-    <link rel="stylesheet" href="../../styling/global.css" />
+    <!-- <link rel="stylesheet" href="../../styling/global.css" /> -->
+
+    <style>
+      body {
+        background-image: url("../images/friendfinderbackground.jpg");
+        background-size: cover;
+        background-repeat: none;
+        background-attachment: fixed;
+      }
+      h1 {
+        font-family: "Indie Flower", cursive;
+      }
+      p {
+        font-family: "Darker Grotesque", sans-serif;
+        font-size: 25px;
+      }
+    </style>
   </head>
 
   <body>
@@ -59,13 +75,11 @@
             <p class="card-text">
               Are you ready to find a friend? Click the button below to start.
             </p>
-            <div>
-              <a href="survey.html">
-                <button class="btn btn-outline-primary" type="submit">
-                  Ready
-                </button>
-              </a>
-            </div>
+            <form method="GET" action="survey.html">
+              <button class="btn btn-outline-primary" type="submit">
+                Ready
+              </button>
+            </form>
           </div>
         </div>
       </div>
