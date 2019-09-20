@@ -45,6 +45,7 @@
     <style>
       body {
         background-image: url("images/friendfinderbackground.jpg");
+        /* FriendFinder/styling/images/friendfinderbackground.jpg */
         background-size: cover;
         background-repeat: none;
         background-attachment: fixed;
@@ -409,9 +410,10 @@
         }).then(function(response) {
           console.log(response.name);
           console.log(response.photo);
+          var imageEl = $("img").attr("src", `${response.photo}`);
           $("#matchName").append(`${response.name}`);
-          $("#matchImg").append(`src=${response.photo}`);
-          $("#resultModal").modal("toggle");
+          $("#matchImg").append(imageEl);
+          $("#exampleModalCenter").modal("show");
         });
       });
     </script>
