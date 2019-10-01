@@ -410,7 +410,7 @@
         }).then(function(response) {
           console.log(response.name);
           console.log(response.photo);
-          var imageEl = $("<img>");
+          var imageEl = $("<img>").addClass("img-responsive");
           imageEl.attr("src", `${response.photo}`);
           $("#matchName").append(`${response.name}`);
           $("#matchImg").append(imageEl);
