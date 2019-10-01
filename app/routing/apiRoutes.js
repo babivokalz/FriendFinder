@@ -8,7 +8,6 @@ appRoute.get("/api/friends", function(req, res) {
 
 appRoute.post("/api/friends", function(req, res) {
   var userScores = Object.values(req.body);
-  console.log(userScores);
   res.send(bestMatch(userScores));
 });
 
