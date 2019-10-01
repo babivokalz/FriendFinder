@@ -43,6 +43,7 @@ function bestMatch(userScores) {
 
   var friendNames = Object.keys(results);
   var bestFriendName = friendNames[leastDifference];
+  console.log(leastDifference);
 
   var bestFriendPhoto = "";
   for (i = 0; i < friends.length; i++) {

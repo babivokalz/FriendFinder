@@ -120,7 +120,7 @@
                 class="form-control-range"
                 min="0"
                 max="5"
-                id="q1"
+                name="q1"
               />
             </div>
             <div class="col-1 text-right">
@@ -132,7 +132,7 @@
         <br />
         <div class="col-lg-12">
           <label
-            >Question 2: I relate most to the sour patch kid; sometimes I'm
+            >Question 2: I relate most to the sour patch kname; sometimes I'm
             sour, sometimes I'm sweet.</label
           >
           <br />
@@ -146,7 +146,7 @@
                 class="form-control-range"
                 min="0"
                 max="5"
-                id="q2"
+                name="q2"
               />
             </div>
             <div class="col-1 text-right">
@@ -172,7 +172,7 @@
                 class="form-control-range"
                 min="0"
                 max="5"
-                id="q3"
+                name="q3"
               />
             </div>
             <div class="col-1 text-right">
@@ -198,7 +198,7 @@
                 class="form-control-range"
                 min="0"
                 max="5"
-                id="q4"
+                name="q4"
               />
             </div>
             <div class="col-1 text-right">
@@ -224,7 +224,7 @@
                 class="form-control-range"
                 min="0"
                 max="5"
-                id="q5"
+                name="q5"
               />
             </div>
             <div class="col-1 text-right">
@@ -250,7 +250,7 @@
                 class="form-control-range"
                 min="0"
                 max="5"
-                id="q6"
+                name="q6"
               />
             </div>
             <div class="col-1 text-right">
@@ -276,7 +276,7 @@
                 class="form-control-range"
                 min="0"
                 max="5"
-                id="q7"
+                name="q7"
               />
             </div>
             <div class="col-1 text-right">
@@ -299,7 +299,7 @@
                 class="form-control-range"
                 min="0"
                 max="5"
-                id="q8"
+                name="q8"
               />
             </div>
             <div class="col-1 text-right">
@@ -322,7 +322,7 @@
                 class="form-control-range"
                 min="0"
                 max="5"
-                id="q9"
+                name="q9"
               />
             </div>
             <div class="col-1 text-right">
@@ -345,7 +345,7 @@
                 class="form-control-range"
                 min="0"
                 max="5"
-                id="q10"
+                name="q10"
               />
             </div>
             <div class="col-1 text-right">
@@ -406,8 +406,9 @@
     </div>
 
     <script>
-      $(document).on("submit", "#answersForm", function() {
-        event.preventDefault();
+      $(document).on("submit", "#answersForm", function(e) {
+        e.preventDefault();
+        console.log("WHAT AM I: ", $("#answersForm").serialize());
         $.ajax({
           url: `/api/friends`,
           method: "POST",
